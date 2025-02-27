@@ -43,16 +43,17 @@ h1 {
 .description {
     font-size: 18px;
     line-height: 1.8;
-    max-width: 700px;
     margin: 20px auto;
-    text-align: left;
+    text-align: center;
+    max-width: 90%;
 }
 
 .subtitle {
     font-size: 16px;
     font-style: italic;
     margin: 15px auto;
-    max-width: 700px;
+    text-align: center;
+    max-width: 90%;
 }
 
 .journey-button {
@@ -80,6 +81,7 @@ h1 {
     background-color: rgba(122, 130, 255, 0.1);
 }
 
+/* На второй странице 🌐myjourney текст идет столбиком */
 .journey-container {
     max-width: 700px;
     margin: 50px auto;
@@ -119,6 +121,7 @@ h1 {
     text-decoration: underline;
 }
 
+/* Фиолетовый цвет ссылок на первой странице */
 a {
     color: #7A82FF !important;
     text-decoration: none;
