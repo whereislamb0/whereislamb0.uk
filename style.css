@@ -100,26 +100,32 @@ a:hover {
     margin-right: 8px;
 }
 
-/* Back Button */
+/* Back Button (fixed at bottom) */
 .back-button {
-    display: block;
-    margin: 30px auto;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(34, 34, 34, 0.8);
     color: #7A82FF;
-    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
     font-size: 16px;
+    text-decoration: none;
 }
 
 /* Journey Content (Second Page) */
 .journey-content {
     text-align: left;
-    max-width: 800px;  /* Ширина столбика */
-    margin: 200px auto 50px;  /* Отступ сверху */
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 200px;
     font-size: 18px;
-    line-height: 1.9;  /* Увеличенный межстрочный интервал */
+    line-height: 1.9;
 }
 
-/* Paragraph Formatting for Readability */
+/* Paragraph Formatting */
 .journey-content p {
     text-indent: 25px;
-    margin-bottom: 22px; /* Отступ между абзацами */
+    margin-bottom: 22px;
 }
