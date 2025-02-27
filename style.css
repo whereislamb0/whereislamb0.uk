@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
 body {
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -10,68 +8,84 @@ body {
 }
 
 .container {
-    max-width: 85%;
-    margin: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .avatar {
-    width: 200px;
+    width: 180px;
     border-radius: 50%;
     margin: 20px;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
 }
 
 .social-icons img {
-    width: 40px;
-    border-radius: 50%;
-    transition: transform 0.2s ease-in-out;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
+    width: 24px;
+    height: 24px;
+    filter: invert(0);
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
-.description, .subtitle {
-    font-size: 16px;
-    margin: 15px 0;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+a {
+    text-decoration: none;
+    color: #7A82FF;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    max-width: 680px;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .subtitle {
     font-style: italic;
-    font-size: 15px;
 }
 
 .journey-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
-    color: #7A82FF;
-    font-weight: 600;
-    font-size: 16px;
-    border: 2px solid #7A82FF;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
     border-radius: 30px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s;
+    border: 2px solid #7A82FF;
+    color: #7A82FF;
+    background: transparent;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .journey-button:hover {
@@ -80,34 +94,7 @@ h1 {
 }
 
 .journey-button img {
-    width: 18px;
-    margin-right: 8px;
-}
-
-/* Медиа-запрос для адаптации под масштаб 100% */
-@media screen and (min-width: 1400px) {
-    .container {
-        max-width: 75%;
-    }
-
-    .avatar {
-        width: 180px;
-    }
-
-    .social-icons img {
-        width: 32px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    .description, .subtitle {
-        font-size: 14px;
-    }
-
-    .journey-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+    width: 20px;
+    height: 20px;
+    filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(220deg);
 }
