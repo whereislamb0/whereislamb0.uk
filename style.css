@@ -9,12 +9,14 @@ body {
     text-align: center;
 }
 
+/* Main Container */
 .container {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Profile Avatar */
 .avatar {
     width: 180px;
     border-radius: 50%;
@@ -22,6 +24,7 @@ body {
     display: block;
 }
 
+/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -37,37 +40,35 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: white;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
 }
 
+/* Headings */
 h1 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
 }
 
+/* Main Text */
 .description {
     font-size: 18px;
     line-height: 1.6;
-    : 600px;
+    max-width: 600px;
     margin: 10px auto;
 }
 
+/* Italic Subtitle */
 .subtitle {
     font-size: 16px;
     font-style: italic;
     margin-top: 20px;
 }
 
+/* Links */
 a {
     color: #7A82FF;
     text-decoration: none;
@@ -77,6 +78,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Journey Button */
 .journey-button {
     display: flex;
     align-items: center;
@@ -98,6 +100,7 @@ a:hover {
     margin-right: 8px;
 }
 
+/* Back Button */
 .back-button {
     display: block;
     margin: 30px auto;
@@ -106,14 +109,16 @@ a:hover {
     font-size: 16px;
 }
 
+/* Journey Content (Second Page) */
 .journey-content {
     text-align: left;
-    max-width: 2000px;
-    margin: 200px auto 50px;
+    max-width: 1100px;
+    margin: 150px auto 50px;
     font-size: 18px;
     line-height: 1.8;
 }
 
+/* Paragraph Formatting for Readability */
 .journey-content p {
     text-indent: 25px;
     margin-bottom: 20px;
