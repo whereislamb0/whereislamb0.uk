@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.description, .subtitle {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.journey-button, .back-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
