@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
@@ -23,21 +23,18 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+    display: inline-block;
+    background: white;
     border-radius: 50%;
+    padding: 10px;
 }
 
 .social-icons img {
-    width: 24px;
+    width: 40px;
 }
 
 h1 {
@@ -47,11 +44,13 @@ h1 {
 
 .description {
     font-size: 16px;
+    font-weight: 400;
     margin: 10px 0;
 }
 
 .subtitle {
     font-size: 16px;
+    font-weight: 300;
     font-style: italic;
     margin: 10px 0;
 }
@@ -59,25 +58,37 @@ h1 {
 a {
     color: #7A82FF;
     text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .journey-button {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: transparent;
-    color: #7A82FF;
+    background: transparent;
     border: 2px solid #7A82FF;
-    padding: 10px 20px;
-    border-radius: 25px;
+    color: #7A82FF;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 40px;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: lowercase;
-    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
-.journey-button .globe-icon {
+.journey-button:hover {
+    background: #7A82FF;
+    color: white;
+}
+
+.journey-button .icon {
     font-size: 20px;
+    margin-right: 8px;
     color: #7A82FF;
+}
+
+.journey-button:hover .icon {
+    color: white;
 }
