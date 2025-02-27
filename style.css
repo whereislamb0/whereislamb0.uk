@@ -31,6 +31,7 @@ body {
 
 .social-icons img {
     width: 35px;
+    filter: brightness(1.5); /* Увеличиваем яркость иконок */
 }
 
 h1 {
