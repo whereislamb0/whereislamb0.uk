@@ -24,9 +24,9 @@ body {
 }
 
 .avatar {
-    width: 120px;
+    width: 240px;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: 40px auto;
     display: block;
 }
 
@@ -68,6 +68,15 @@ h1 {
     font-size: 16px;
     font-style: italic;
     margin-top: 15px;
+}
+
+a {
+    color: #7A82FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .journey-button {
@@ -113,6 +122,10 @@ h1 {
 
     .social-icons img {
         width: 25px;
+    }
+
+    .avatar {
+        width: 180px;
     }
 
     h1 {
