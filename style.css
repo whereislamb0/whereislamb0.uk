@@ -17,9 +17,24 @@ body {
     margin: 20px;
 }
 
+/* Стили для иконок соцсетей */
+.social-icons a {
+    display: inline-block;
+    width: 60px; /* Размер кнопки */
+    height: 60px;
+    border-radius: 50%;
+    background-color: white; /* Белый фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
 .social-icons img {
     width: 40px;
-    margin: 10px;
+    height: 40px;
+    filter: invert(0); /* Убираем инверсию (черные иконки на белом фоне) */
 }
 
 h1 {
@@ -38,21 +53,5 @@ h1 {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-.social-icons a img {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     margin-top: 20px;
 }
