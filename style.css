@@ -1,114 +1,123 @@
-/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 body {
     background-color: #232425;
-    font-family: 'Inter', sans-serif;
     color: #ffffff;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 /* Profile image */
-.profile-image {
-    width: 150px; /* Возвращаю размер обратно */
-    height: 150px;
+.profile-img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-top: 40px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 /* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin: 20px 0;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.social-icons a {
-    background: white;
+.social-icons a img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Name */
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Italic text */
+.italic-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Button */
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #7A82FF;
+    border: 2px solid #7A82FF;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    filter: invert(11%) sepia(100%) saturate(3000%) hue-rotate(220deg); /* Цвет как был ранее */
+.button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #7A82FF;
+    color: #ffffff;
 }
 
 /* Links */
 a {
     color: #7A82FF;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #B0B5FF;
+    color: #a0a8ff;
 }
 
-/* Section styles */
-.container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Button styles */
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    color: #7A82FF;
-    border: 2px solid #7A82FF;
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background: #7A82FF;
-    color: white;
-}
-
-.button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    filter: invert(50%) sepia(100%) saturate(3000%) hue-rotate(220deg);
-}
-
-/* My Journey page */
+/* Second page (journey) */
 .journey-container {
-    max-width: 700px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: left;
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 .journey-container p {
-    text-align: justify;
     margin-bottom: 20px;
 }
