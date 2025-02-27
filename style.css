@@ -1,123 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 body {
-    background-color: #232425;
-    color: #ffffff;
     font-family: 'Inter', sans-serif;
-    text-align: center;
+    background-color: #232425;
+    color: white;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* Main container */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Profile image */
-.profile-img {
+.avatar {
     width: 180px;
-    height: 180px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    margin: 40px auto;
+    display: block;
 }
 
-/* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin: 20px 0;
 }
 
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 8px;
-    transition: transform 0.3s ease;
+.social-icons img {
+    width: 35px;
 }
 
-.social-icons a img:hover {
-    transform: scale(1.1);
-}
-
-/* Name */
-.name {
-    font-size: 24px;
+h1 {
+    font-size: 26px;
     font-weight: 600;
-    margin-bottom: 10px;
-}
-
-/* Description */
-.description {
-    font-size: 16px;
-    font-weight: 300;
-    max-width: 600px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Italic text */
-.italic-text {
-    font-size: 14px;
-    font-style: italic;
-    color: #cccccc;
-}
-
-/* Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #7A82FF;
-    border: 2px solid #7A82FF;
-    padding: 12px 20px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 20px;
 }
 
-.button img {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
 }
 
-.button:hover {
-    background-color: #7A82FF;
-    color: #ffffff;
+.subtitle {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
 }
 
-/* Links */
 a {
     color: #7A82FF;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #a0a8ff;
+    text-decoration: underline;
 }
 
-/* Second page (journey) */
-.journey-container {
-    max-width: 750px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: justify;
+.journey-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #7A82FF;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #7A82FF;
+    border-radius: 30px;
+    margin: 40px auto;
+    width: fit-content;
+}
+
+.journey-button img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.back-button {
+    display: block;
+    margin: 30px auto;
+    color: #7A82FF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.journey-content {
+    text-align: left;
+    max-width: 700px;
+    margin: 80px auto 50px;
+    font-size: 18px;
     line-height: 1.8;
 }
 
-.journey-container p {
+.journey-content p {
+    text-indent: 25px;
     margin-bottom: 20px;
 }
