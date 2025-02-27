@@ -1,124 +1,114 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
-    font-family: 'Inter', sans-serif;
     background-color: #232425;
+    font-family: 'Inter', sans-serif;
     color: #ffffff;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Profile section */
-.profile-img {
-    width: 180px;
-    height: 180px;
+/* Profile image */
+.profile-image {
+    width: 150px; /* Возвращаю размер обратно */
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
+    margin-top: 40px;
 }
 
 /* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin: 20px 0;
 }
 
 .social-icons a {
-    width: 50px;
-    height: 50px;
+    background: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background-color: white;
-    transition: transform 0.2s ease-in-out;
+    width: 50px;
+    height: 50px;
 }
 
-.social-icons a img {
-    width: 26px;
-    height: 26px;
-    filter: invert(0);
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
-}
-
-/* Main text styles */
-.main-text {
-    font-size: 20px;
-    font-weight: 400;
-    max-width: 700px;
-    line-height: 1.6;
-    margin-top: 15px;
-}
-
-h1 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 15px;
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(11%) sepia(100%) saturate(3000%) hue-rotate(220deg); /* Цвет как был ранее */
 }
 
 /* Links */
 a {
     color: #7A82FF;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: #a0a6ff;
+    color: #B0B5FF;
 }
 
-/* My Journey Button */
-.journey-btn {
-    display: flex;
+/* Section styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.button {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #7A82FF;
     background: transparent;
+    color: #7A82FF;
     border: 2px solid #7A82FF;
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
 }
 
-.journey-btn:hover {
+.button:hover {
     background: #7A82FF;
-    color: #ffffff;
+    color: white;
 }
 
-.journey-btn img {
-    width: 22px;
-    height: 22px;
+.button img {
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-    filter: invert(51%) sepia(50%) saturate(700%) hue-rotate(220deg);
+    filter: invert(50%) sepia(100%) saturate(3000%) hue-rotate(220deg);
 }
 
-/* Content Page Styles */
-.content-container {
-    max-width: 800px;
+/* My Journey page */
+.journey-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
     text-align: left;
-    margin-top: 50px;
 }
 
-.content-container p {
+.journey-container p {
+    text-align: justify;
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.8;
 }
