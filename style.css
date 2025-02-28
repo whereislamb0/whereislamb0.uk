@@ -3,28 +3,30 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #232425;
-    color: #FFFFFF;
+    color: white;
     margin: 0;
     padding: 0;
     text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
 }
 
+/* Контейнер для первой страницы — полностью центрируем */
 .container {
-    padding: 0; /* убираем padding, если он мешает */
-    max-width: 1100px;
-    margin: 0 auto;  /* убираем лишний отступ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Центрирование по высоте экрана */
+    padding: 20px;
 }
 
+/* Аватар — фиксированный размер */
 .avatar {
     width: 180px;
     border-radius: 50%;
-    margin: 20px auto; /* уменьшенный отступ */
-    display: block;
+    margin-bottom: 20px;
 }
 
+/* Соц. иконки — центрируем и добавляем белый круг */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -39,28 +41,29 @@ body {
     padding: 5px;
 }
 
+/* Заголовок */
 h1 {
     font-size: 26px;
     font-weight: 600;
-    margin: 10px 0; /* убираем лишний отступ */
+    margin-top: 10px;
 }
 
+/* Описание */
 .description {
     font-size: 18px;
-    font-weight: 300;
-    line-height: 1.8;
-    letter-spacing: 0.02em;
-    width: 60vw;
-    max-width: 1100px;
+    line-height: 1.6;
+    max-width: 600px;
     margin: 10px auto;
 }
 
+/* Дополнительный текст */
 .subtitle {
     font-size: 16px;
     font-style: italic;
-    margin-top: 10px; /* убираем избыточный отступ */
+    margin-top: 20px;
 }
 
+/* Ссылки */
 a {
     color: #7A82FF;
     text-decoration: none;
@@ -70,6 +73,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Кнопка myjourney */
 .journey-button {
     display: flex;
     align-items: center;
@@ -82,7 +86,7 @@ a:hover {
     text-decoration: none;
     border: 2px solid #7A82FF;
     border-radius: 30px;
-    margin: 20px auto;
+    margin-top: 30px;
     width: fit-content;
 }
 
@@ -91,22 +95,57 @@ a:hover {
     margin-right: 8px;
 }
 
+/* ВТОРАЯ СТРАНИЦА (journey.html) */
+
+/* Контейнер с текстом */
+.journey-content {
+    text-align: left;
+    max-width: 1100px;
+    margin: 10vh auto 50px; /* 10% от экрана сверху вместо фиксированного отступа */
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Отступ между абзацами */
+.journey-content p {
+    text-indent: 25px;
+    margin-bottom: 20px;
+}
+
+/* Кнопка "Назад" */
 .back-button {
     display: block;
     margin: 30px auto;
     color: #7A82FF;
     text-decoration: none;
     font-size: 16px;
-    position: static;
 }
 
-.journey-content {
-    text-align: left;
-    width: 60vw;
-    max-width: 1100px;
-    margin: 50px auto; /* исправленный отступ */
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 2;
-    letter-spacing: 0.02em;
+/* АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .avatar {
+        width: 140px;
+    }
+    
+    .social-icons img {
+        width: 30px;
+        padding: 4px;
+    }
+    
+    .description {
+        font-size: 16px;
+        max-width: 90%;
+    }
+    
+    .journey-content {
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 8vh auto 30px;
+    }
 }
