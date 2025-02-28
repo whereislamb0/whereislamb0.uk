@@ -78,9 +78,16 @@ a:hover {
     width: fit-content;
 }
 
-.journey-button img {
-    width: 25px;
-    margin-right: 13px;
+.journey-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-button .icon {
+    padding-right: 20px; /* Увеличивай значение, если нужно больше пробела */
+    display: flex;
+    align-items: center;
 }
 
 .back-button {
