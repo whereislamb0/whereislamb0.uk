@@ -152,8 +152,3 @@ a:hover {
 .popup button:hover {
     background: #5a62e2;
 }
-
-#discordModal strong {
-    font-weight: bold;
-    font-style: italic;
-}
