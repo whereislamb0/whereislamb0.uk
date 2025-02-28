@@ -152,3 +152,11 @@ a:hover {
 .popup button:hover {
     background: #5a62e2;
 }
+
+.modal-content {
+    background-color: #2C2F33;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
