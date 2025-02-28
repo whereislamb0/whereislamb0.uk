@@ -9,24 +9,19 @@ body {
     text-align: center;
 }
 
-/* Главный контейнер */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Центрируем контент по высоте */
     padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Аватар */
 .avatar {
     width: 180px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin: 40px auto;
+    display: block;
 }
 
-/* Иконки социальных сетей */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -36,34 +31,30 @@ body {
 
 .social-icons img {
     width: 35px;
-    border-radius: 50%;
     background: white;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 50%;
 }
 
-/* Заголовок */
 h1 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 20px;
 }
 
-/* Описание */
 .description {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 700px;
     margin: 10px auto;
 }
 
-/* Подзаголовок */
 .subtitle {
     font-size: 16px;
     font-style: italic;
     margin-top: 20px;
 }
 
-/* Ссылки */
 a {
     color: #7A82FF;
     text-decoration: none;
@@ -73,7 +64,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Кнопка "Journey" */
 .journey-button {
     display: flex;
     align-items: center;
@@ -95,25 +85,6 @@ a:hover {
     margin-right: 8px;
 }
 
-/* ВТОРАЯ СТРАНИЦА (journey.html) */
-
-/* Контейнер с текстом */
-.journey-content {
-    text-align: left;
-    max-width: 1100px; /* Ограничиваем ширину */
-    margin: 10vh auto 50px; /* Центрируем */
-    font-size: 18px;
-    line-height: 1.8;
-    padding: 0 40px; /* Отступы слева и справа */
-}
-
-/* Отступ между абзацами */
-.journey-content p {
-    text-indent: 25px;
-    margin-bottom: 20px;
-}
-
-/* Кнопка "Back to Home" (теперь статичная) */
 .back-button {
     display: block;
     margin: 30px auto;
@@ -122,18 +93,34 @@ a:hover {
     font-size: 16px;
 }
 
-/* Мобильная адаптация */
-@media (max-width: 768px) {
-    .container {
-        height: auto;
-        padding: 40px 20px;
-    }
+.journey-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 200px auto 50px;
+    font-size: 18px;
+    line-height: 1.8;
+}
 
-    .journey-content {
-        max-width: 90%;
-        font-size: 16px;
-        line-height: 1.6;
-        margin: 8vh auto 30px;
-        padding: 0 20px;
-    }
+.journey-content p {
+    text-indent: 25px;
+    margin-bottom: 20px;
+}
+
+/* Центрирование контента на первой странице */
+.first-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Исправление отступов на второй странице */
+.journey-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 120px;
 }
