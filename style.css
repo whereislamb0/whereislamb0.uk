@@ -13,15 +13,15 @@ body {
 }
 
 .container {
-    padding: 20px;
+    padding: 0; /* убираем padding, если он мешает */
     max-width: 1100px;
-    margin: 50px auto;
+    margin: 0 auto;  /* убираем лишний отступ */
 }
 
 .avatar {
     width: 180px;
     border-radius: 50%;
-    margin: 40px auto;
+    margin: 20px auto; /* уменьшенный отступ */
     display: block;
 }
 
@@ -42,7 +42,7 @@ body {
 h1 {
     font-size: 26px;
     font-weight: 600;
-    margin-top: 20px;
+    margin: 10px 0; /* убираем лишний отступ */
 }
 
 .description {
@@ -58,7 +58,7 @@ h1 {
 .subtitle {
     font-size: 16px;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 10px; /* убираем избыточный отступ */
 }
 
 a {
@@ -82,7 +82,7 @@ a:hover {
     text-decoration: none;
     border: 2px solid #7A82FF;
     border-radius: 30px;
-    margin: 40px auto;
+    margin: 20px auto;
     width: fit-content;
 }
 
@@ -93,7 +93,7 @@ a:hover {
 
 .back-button {
     display: block;
-    margin: 50px auto 30px;
+    margin: 30px auto;
     color: #7A82FF;
     text-decoration: none;
     font-size: 16px;
@@ -104,7 +104,7 @@ a:hover {
     text-align: left;
     width: 60vw;
     max-width: 1100px;
-    margin: 75px auto 50px;
+    margin: 50px auto; /* исправленный отступ */
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
