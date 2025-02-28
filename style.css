@@ -78,19 +78,6 @@ a:hover {
     width: fit-content;
 }
 
-.journey-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px; /* Регулируй значение, чтобы задать нужный отступ */
-}
-
-.journey-button .icon {
-    margin-right: 20px; /* Увеличивай значение, если нужно больше пробела */
-    display: flex;
-    align-items: center;
-}
-
 .back-button {
     display: block;
     margin: 30px auto;
