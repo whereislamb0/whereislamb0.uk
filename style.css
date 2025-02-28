@@ -9,24 +9,24 @@ body {
     text-align: center;
 }
 
-/* Контейнер для первой страницы — полностью центрируем */
+/* Главный контейнер */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Центрирование по высоте экрана */
+    height: 100vh; /* Центрируем контент по высоте */
     padding: 20px;
 }
 
-/* Аватар — фиксированный размер */
+/* Аватар */
 .avatar {
     width: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-/* Соц. иконки — центрируем и добавляем белый круг */
+/* Иконки социальных сетей */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -36,8 +36,8 @@ body {
 
 .social-icons img {
     width: 35px;
-    background-color: white;
     border-radius: 50%;
+    background: white;
     padding: 5px;
 }
 
@@ -45,7 +45,7 @@ body {
 h1 {
     font-size: 26px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* Описание */
@@ -56,7 +56,7 @@ h1 {
     margin: 10px auto;
 }
 
-/* Дополнительный текст */
+/* Подзаголовок */
 .subtitle {
     font-size: 16px;
     font-style: italic;
@@ -73,7 +73,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Кнопка myjourney */
+/* Кнопка "Journey" */
 .journey-button {
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ a:hover {
     text-decoration: none;
     border: 2px solid #7A82FF;
     border-radius: 30px;
-    margin-top: 30px;
+    margin: 40px auto;
     width: fit-content;
 }
 
@@ -100,10 +100,11 @@ a:hover {
 /* Контейнер с текстом */
 .journey-content {
     text-align: left;
-    max-width: 1100px;
-    margin: 10vh auto 50px; /* 10% от экрана сверху вместо фиксированного отступа */
+    max-width: 1100px; /* Ограничиваем ширину */
+    margin: 10vh auto 50px; /* Центрируем */
     font-size: 18px;
     line-height: 1.8;
+    padding: 0 40px; /* Отступы слева и справа */
 }
 
 /* Отступ между абзацами */
@@ -112,7 +113,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-/* Кнопка "Назад" */
+/* Кнопка "Back to Home" (теперь статичная) */
 .back-button {
     display: block;
     margin: 30px auto;
@@ -121,31 +122,18 @@ a:hover {
     font-size: 16px;
 }
 
-/* АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА */
+/* Мобильная адаптация */
 @media (max-width: 768px) {
     .container {
         height: auto;
         padding: 40px 20px;
     }
-    
-    .avatar {
-        width: 140px;
-    }
-    
-    .social-icons img {
-        width: 30px;
-        padding: 4px;
-    }
-    
-    .description {
-        font-size: 16px;
-        max-width: 90%;
-    }
-    
+
     .journey-content {
         max-width: 90%;
         font-size: 16px;
         line-height: 1.6;
         margin: 8vh auto 30px;
+        padding: 0 20px;
     }
 }
