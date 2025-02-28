@@ -9,6 +9,7 @@ body {
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -48,6 +49,8 @@ h1 {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
+    letter-spacing: 0.02em;
+    width: 60vw;
     max-width: 1100px;
     margin: 10px auto;
 }
@@ -99,14 +102,11 @@ a:hover {
 
 .journey-content {
     text-align: left;
+    width: 60vw;
     max-width: 1100px;
     margin: 150px auto 50px;
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
-}
-
-.journey-content p {
-    text-indent: 25px;
-    margin-bottom: 20px;
+    letter-spacing: 0.02em;
 }
