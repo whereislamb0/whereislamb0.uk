@@ -79,9 +79,10 @@ a:hover {
 }
 
 .journey-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px; /* Регулируй значение, чтобы задать нужный отступ */
 }
 
 .journey-button .icon {
