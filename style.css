@@ -85,7 +85,7 @@ a:hover {
 }
 
 .journey-button .icon {
-    padding-right: 20px; /* Увеличивай значение, если нужно больше пробела */
+    margin-right: 20px; /* Увеличивай значение, если нужно больше пробела */
     display: flex;
     align-items: center;
 }
