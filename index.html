@@ -66,14 +66,16 @@
     </div>
 
     <div id="discordAlert" class="alert-box">
-        <p>A direct link to Discord profiles doesn't always work correctly. Use the handle “whereislamb0” to find me there.</p>
-        <button onclick="closeAlert()">Close</button>
+        <div class="alert-content">
+            <p>A direct link to Discord profiles doesn't always work correctly. Use the handle “whereislamb0” to find me there.</p>
+            <button onclick="closeAlert()">Close</button>
+        </div>
     </div>
 
     <script>
         function showAlert(event) {
             event.preventDefault();
-            document.getElementById('discordAlert').style.display = 'block';
+            document.getElementById('discordAlert').style.display = 'flex';
         }
 
         function closeAlert() {
