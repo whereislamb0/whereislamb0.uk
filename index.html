@@ -31,7 +31,7 @@
             <a href="https://warpcast.com/whereislamb0" target="_blank">
                 <img src="images/warpcast.png" alt="Warpcast">
             </a>
-            <a href="#" onclick="showAlert()">
+            <a href="#" onclick="showAlert(event)">
                 <img src="images/discord.png" alt="Discord">
             </a>
             <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">
@@ -71,7 +71,8 @@
     </div>
 
     <script>
-        function showAlert() {
+        function showAlert(event) {
+            event.preventDefault();
             document.getElementById('discordAlert').style.display = 'block';
         }
 
