@@ -31,7 +31,7 @@
             <a href="https://warpcast.com/whereislamb0" target="_blank">
                 <img src="images/warpcast.png" alt="Warpcast">
             </a>
-            <a href="https://discord.com/users/827059016797913108" target="_blank">
+            <a href="#" onclick="showDiscordAlert(event)">
                 <img src="images/discord.png" alt="Discord">
             </a>
             <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">
@@ -64,5 +64,21 @@
             <span class="text">myjourney</span>
         </a>
     </div>
+
+    <div id="discord-alert" class="alert-box">
+        <p>A direct link to Discord profiles doesn't always work correctly. Use the handle “whereislamb0” to find me there.</p>
+        <button onclick="closeDiscordAlert()">Close</button>
+    </div>
+
+    <script>
+        function showDiscordAlert(event) {
+            event.preventDefault();
+            document.getElementById('discord-alert').style.display = 'block';
+        }
+
+        function closeDiscordAlert() {
+            document.getElementById('discord-alert').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
