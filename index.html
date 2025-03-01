@@ -30,7 +30,7 @@
             <a href="https://warpcast.com/whereislamb0" target="_blank">
                 <img src="images/warpcast.png" alt="Warpcast">
             </a>
-            <a href="#" onclick="showDiscordAlert()">
+            <a href="#" onclick="showDiscordAlert(event)">
                 <img src="images/discord.png" alt="Discord">
             </a>
             <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">
@@ -64,7 +64,7 @@
         </a>
     </div>
 
-    <div id="discord-popup" class="popup">
+    <div id="discord-popup" class="popup" style="display: none;">
         <div class="popup-content">
             <p>A direct link to Discord profiles doesn't always work correctly. Use the handle <strong><em>“whereislamb0”</em></strong> to find me there.</p>
             <button onclick="closePopup()">Close</button>
@@ -72,7 +72,8 @@
     </div>
 
     <script>
-        function showDiscordAlert() {
+        function showDiscordAlert(event) {
+            event.preventDefault();
             document.getElementById("discord-popup").style.display = "flex";
         }
 
