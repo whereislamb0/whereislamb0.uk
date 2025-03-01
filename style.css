@@ -131,12 +131,13 @@ a:hover {
 }
 
 .popup-content {
-    background: #fff;
-    color: #000;
+    background: #2C2F33;
+    color: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .popup button {
